@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="imagenes/Castellon.png" type="image/png">
+        <title>Home</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="fonts.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="button-container">
+                <a href="Historia.html" class="btn btn-2"> Historia del 
+                    CD Castellón</a>
+            </div>
+        </div>
+    <!-- El sonido (ruta: carpeta 'sounds/btn-s.mp3') -->
+<audio id="btn-sound" src="sounds/btn.mp3" preload="auto"></audio>
+<audio id="btn-sound" src="sounds/btn.mp3" prel></audio>
+
+<script>
+const links = document.querySelectorAll('.btn');
+const sound = document.getElementById('btn-sound');
+
+// Escucha el primer movimiento del ratón como "interacción del usuario"
+let userInteracted = false;
+document.addEventListener('mousemove', () => {
+    if (!userInteracted) {
+        userInteracted = true;
+        // Esto desbloquea la reproducción de audio en la mayoría de navegadores
+        sound.play().then(() => {
+            sound.pause();
+            sound.currentTime = 0;
+        }).catch(err => console.log('Autoplay bloqueado:', err));
+    }
+}, { once: true });
+
+links.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        sound.currentTime = 0;
+        sound.play().catch(err => console.log('Autoplay bloqueado:', err));
+    });
+
+    link.addEventListener('mouseleave', () => {
+        sound.pause();
+        sound.currentTime = 0;
+    });
+});
+</script>
+    </script>
+    </body>
+</html>     

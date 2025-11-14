@@ -1,0 +1,124 @@
+body {
+    background-color: #222;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 40px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    position: relative;
+    white-space: pre-line;
+    font-family: titulo;
+    font-size: 50px;
+    display: inline-block; /* hace que el <a> se comporte como botón */
+    text-decoration: none; /* quita el subrayado de los enlaces */
+    text-align: center; /* centra el texto dentro */
+    cursor: pointer; /* cambia el cursor al de botón */
+    box-shadow: 0px 0px 25px#48e;
+}
+
+
+.btn-2 {
+    box-shadow:(0px 0px 15px #48e);
+}
+
+.btn-2 {
+    border: 3px solid #fff3;
+    border-radius: 20px;
+    color: #fff3;
+    box-shadow:(0px 0px 15px #48e);
+    
+}
+
+.btn-2:hover {
+    animation: parpadear 1.5s infinite alternate backwards;
+    box-shadow: 0px 0px 25px#48e;
+
+} 
+
+@keyframes parpadear {
+    0% {
+        color: #fff3;
+        border: 3px solid #fff3;
+        text-shadow: none;
+        box-shadow: none;
+    }
+
+    6%{
+        border-color:  rgb(76, 133, 218);
+        text-shadow: 0px 0px 5px rgba(68, 136, 238, 0.802), 0px 0px 2px rgba(159, 197, 255, 0.454);
+        box-shadow: 0px 0px 25px#48e;
+    }
+    17% {
+        color: rgb(71, 130, 185);
+        border: 3px solid rgb(71, 130, 185);
+        text-shadow: 0px;
+        box-shadow: 0px;
+    }
+
+    22%{
+        border-color:  rgb(76, 133, 218);
+        text-shadow: 0px 0px 9px rgba(68, 136, 238, 0.802), 0px 0px 2px rgba(159, 197, 255, 0.454);
+        box-shadow:(0px 0px 15px #48e);
+    }
+    35% {
+        color: #fff3;
+        border: 3px solid #fff3;
+        text-shadow: none;
+        box-shadow: none;
+    }
+
+    40%{
+        color:  rgb(76, 133, 218);
+        text-shadow: 0px 0px 9px rgba(68, 136, 238, 0.802), 0px 0px 5px rgba(159, 197, 255, 0.454);
+        box-shadow: 0px 0px 25px#48e;
+
+    }
+    48% {
+        color: #fff3;
+        border: 3px solid #fff3;
+        text-shadow: 0px;
+        box-shadow: 0px;
+    }
+
+    57%{
+        border-color:  rgb(76, 133, 218);
+        text-shadow: 0px 0px 5px rgba(68, 136, 238, 0.802), 0px 0px 2px rgba(159, 197, 255, 0.454);
+        box-shadow: 0px 0px 25px#48e;
+    }
+    65% {
+        color: rgb(71, 130, 185);
+        border: 3px solid rgb(71, 130, 185);
+        text-shadow: 0px;
+        box-shadow: 0px;
+    }
+
+    79%{
+        border-color:  rgb(76, 133, 218);
+        text-shadow: 0px 0px 9px rgba(68, 136, 238, 0.802), 0px 0px 2px rgba(159, 197, 255, 0.454);
+        box-shadow: 0px 0px 25px#48e;
+    }
+    90% {
+        color: #fff3;
+        border: 3px solid #fff3;
+        text-shadow: none;
+        box-shadow: none;
+    }
+
+    100%{
+        color:  rgb(76, 133, 218);
+        text-shadow: 0px 0px 9px rgba(68, 136, 238, 0.802), 0px 0px 5px rgba(159, 197, 255, 0.454);
+        box-shadow: 0px 0px 25px#48e;
+    }
+}

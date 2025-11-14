@@ -1,0 +1,174 @@
+body {
+    animation: fondo 3s alternate forwards;
+    background-color: #e2f0fbe4;
+    box-sizing: border-box;
+    color:rgb(255, 255, 255);
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* horizontalmente */
+    align-items: center;
+    width: 100vw;
+    background-image: url(imagenes/06052024-Rua-Cd-Castellon_19-scaled.jpg);
+    background-image: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@keyframes fondo {
+    0%{
+        background-color: rgb(0, 0, 0);
+        background-image: none;
+    }
+    8%{
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+    }
+    16%{
+        background-color: rgb(0, 0, 0);
+        background-image: none;
+    }
+    24%{
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+    }
+    32%{
+        background-color: rgb(0, 0, 0);
+        background-image: none;
+    }
+    40%{
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+    }
+    48%{
+        background-color: rgb(0, 0, 0);
+        background-image: none;
+    }
+    56%{
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+    }
+    64%{
+        background-color: rgb(0, 0, 0);
+        background-image: none;
+    }
+    72%{
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+    }
+    80%{
+        background-color: rgb(0, 0, 0);
+        background-image: none;
+    }
+    90%{
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+    }
+
+}
+@keyframes f {
+    0%{
+        visibility: hidden;
+    }
+    99%{
+        visibility: hidden;
+    }
+    
+}
+
+.box {
+    display: block;
+    white-space: pre-line;
+    box-sizing: border-box;
+    height:90vh;
+    position: static;
+    width: 50vw;
+    padding: 0 5%;
+    text-align: justify;
+    margin-top: 0px;
+    animation: f 3s alternate forwards;
+}
+strong{
+    font-weight: bold;
+}
+h1 {
+    font-family: titulo;
+    text-shadow: 0px 0px 25px#48e;
+    font-size: 35px;
+
+}
+.box-c {
+    flex-direction: column;
+    overflow:scroll; 
+    scroll-initial-target: nearest;
+    scrollbar-color: rgb(255, 255, 255);
+    padding: 50px;
+    scroll-behavior: smooth;
+    scroll-behavior: hidden;
+    background-color: #000000cc;
+    border: 2px solid black;
+    margin: 0px 20px 0 10px;
+    text-shadow: 0px 0px 15px#48e;
+    animation: f 3s alternate forwards;
+}
+img#flecha {
+    position: fixed; /* se sale del flujo normal */
+    top: 0;             /* arriba */
+    left: 10vw;           /* derecha */
+    width: 10vw;       /* ajusta tamaño */
+    height: 10vh;
+    z-index: 5;      /* para que esté por encima de otros elementos */
+    animation: f 3s alternate forwards;
+}
+h2 {
+    text-shadow: 0px 0px 25px#48e;
+}
+p {
+    text-shadow: 0px 0px 25px#48e;
+}
+
+.abajo{ 
+    position:fixed;
+    height: 100%;
+    width: 7%;
+    left: 0;
+    bottom: 0;
+    background-color: #000000de;
+    border-right: 3px solid rgba(255, 255, 255, 0.5);
+    flex-direction: column;
+    display: flex;
+    z-index: 6;
+    font-size: 0;
+    justify-content: center;
+    animation: f 3s alternate forwards;
+    
+}
+.abajo:hover {
+    width: 20%;
+    font-size: 20px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+a:hover{
+    animation: none;
+    text-shadow: 0px 0px 200px rgb(248, 248, 248);
+    font-size: 30px;
+    font-family: titulo;
+}
+
+@media (max-width:500px){
+    img#flecha{
+    width: 15vw;       /* ajusta tamaño */
+    }
+}
+@media (min-width:1600px){
+    img#flecha{
+    width: 7vw;       /* ajusta tamaño */
+    }
+}
